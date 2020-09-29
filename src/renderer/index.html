@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>DBus Viewer</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' blob:;"/>
+</head>
+<body>
+<div class="main">
+    <div class="names">
+        <label for="sel-bus"></label>
+        <select id="sel-bus">
+            <option value="session">Session Bus</option>
+            <option value="system">System Bus</option>
+        </select>
+
+        <label for="sel-name"></label>
+        <select id="sel-name"></select>
+    </div>
+    <div class="divider"></div>
+    <div class="data"></div>
+    <div class="logs"></div>
+</div>
+</body>
+</html>

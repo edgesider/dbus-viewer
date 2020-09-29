@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="064b2c55-eea2-43ec-9b89-a84cb2a272f2" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupnpm">
+      <scroll-view-position x="0" y="0" />
+    </layout>
+  </component>
+  <component name="ProjectId" id="1i88pVK3iJm2s4s0K3H07sKFvDA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/renderer" />
+      <recent name="$PROJECT_DIR$/src/main" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.start">
+    <configuration name="build:tb" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build:tb" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.build:tb" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="064b2c55-eea2-43ec-9b89-a84cb2a272f2" name="Default Changelist" comment="" />
+      <created>1601278041731</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601278041731</updated>
+      <workItem from="1601278042910" duration="8928000" />
+      <workItem from="1601294258982" duration="3244000" />
+      <workItem from="1601347783341" duration="19589000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/main.js" />
+        <option value="$PROJECT_DIR$/src/main/dbus.js" />
+        <option value="$PROJECT_DIR$/src/main/main.js" />
+        <option value="$PROJECT_DIR$/src/main/main.js.map" />
+        <option value="$PROJECT_DIR$/src/main/dbus.js" />
+        <option value="$PROJECT_DIR$/src/main/dbus.js.map" />
+        <option value="$PROJECT_DIR$/src/renderer/renderer.js.map" />
+        <option value="$PROJECT_DIR$/src/renderer/renderer.js" />
+      </list>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="760" y="379" key="#Scopes" timestamp="1601370770123">
+      <screen x="0" y="0" width="1920" height="1042" />
+    </state>
+    <state x="760" y="379" key="#Scopes/0.0.1920.1042@0.0.1920.1042" timestamp="1601370770123" />
+    <state x="615" y="315" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601372913390">
+      <screen x="0" y="0" width="1920" height="1042" />
+    </state>
+    <state x="615" y="315" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1042@0.0.1920.1042" timestamp="1601372913390" />
+    <state width="1895" height="305" key="GridCell.Tab.0.bottom" timestamp="1601387994958">
+      <screen x="0" y="0" width="1920" height="1042" />
+    </state>
+    <state width="1895" height="305" key="GridCell.Tab.0.bottom/0.0.1920.1042@0.0.1920.1042" timestamp="1601387994958" />
+    <state width="1895" height="305" key="GridCell.Tab.0.center" timestamp="1601387994955">
+      <screen x="0" y="0" width="1920" height="1042" />
+    </state>
+    <state width="1895" height="305" key="GridCell.Tab.0.center/0.0.1920.1042@0.0.1920.1042" timestamp="1601387994955" />
+    <state width="1895" height="305" key="GridCell.Tab.0.left" timestamp="1601387994954">
+      <screen x="0" y="0" width="1920" height="1042" />
+    </state>
+    <state width="1895" height="305" key="GridCell.Tab.0.left/0.0.1920.1042@0.0.1920.1042" timestamp="1601387994954" />
+    <state width="1895" height="305" key="GridCell.Tab.0.right" timestamp="1601387994957">
+      <screen x="0" y="0" width="1920" height="1042" />
+    </state>
+    <state width="1895" height="305" key="GridCell.Tab.0.right/0.0.1920.1042@0.0.1920.1042" timestamp="1601387994957" />
+    <state x="100" y="100" width="1720" height="842" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1601387994996">
+      <screen x="0" y="0" width="1920" height="1042" />
+    </state>
+    <state x="100" y="100" width="1720" height="842" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1042@0.0.1920.1042" timestamp="1601387994996" />
+    <state x="220" y="219" width="1455" height="994" key="dock-window-1" timestamp="1601371093070">
+      <screen x="0" y="0" width="1920" height="1042" />
+    </state>
+    <state x="220" y="219" width="1455" height="994" key="dock-window-1/0.0.1920.1042@0.0.1920.1042" timestamp="1601371093070" />
+    <state x="834" y="377" width="250" height="279" key="jetbrains.javascript.buildTools.run-task-popup" timestamp="1601295806348">
+      <screen x="0" y="0" width="1920" height="1042" />
+    </state>
+    <state x="834" y="377" width="250" height="279" key="jetbrains.javascript.buildTools.run-task-popup/0.0.1920.1042@0.0.1920.1042" timestamp="1601295806348" />
+    <state x="744" y="284" key="refactoring.ChangeSignatureDialog" timestamp="1601366071428">
+      <screen x="0" y="0" width="1920" height="1042" />
+    </state>
+    <state x="744" y="284" key="refactoring.ChangeSignatureDialog/0.0.1920.1042@0.0.1920.1042" timestamp="1601366071428" />
+    <state x="624" y="236" key="run.anything.popup" timestamp="1601294450911">
+      <screen x="0" y="0" width="1920" height="1042" />
+    </state>
+    <state x="624" y="236" key="run.anything.popup/0.0.1920.1042@0.0.1920.1042" timestamp="1601294450911" />
+    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1601371149680">
+      <screen x="0" y="0" width="1920" height="1042" />
+    </state>
+    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1042@0.0.1920.1042" timestamp="1601371149680" />
+  </component>
+</project>

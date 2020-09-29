@@ -1,0 +1,52 @@
+{
+  "name": "dbus-viewer",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn webpack && electron dist/main.js",
+    "build": "yarn webpack && electron-builder",
+    "build:tb": "env ELECTRON_MIRROR=https://cdn.npm.taobao.org/dist/electron/ ELECTRON_BUILDER_BINARIES_MIRROR=https://npm.taobao.org/mirrors/electron-builder-binaries/ yarn build",
+    "webpack": "webpack --config webpack.config.main.js && webpack --config webpack.config.renderer.js"
+  },
+  "main": "main.js",
+  "devDependencies": {
+    "@types/jstree": "^3.3.40",
+    "css-loader": "^4.3.0",
+    "electron": "^10.1.2",
+    "electron-builder": "^22.8.1",
+    "html-webpack-plugin": "^4.5.0",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^8.0.4",
+    "typescript": "^4.0.3",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-merge": "^5.1.4"
+  },
+  "dependencies": {
+    "dbus-next": "^0.9.1",
+    "jquery": "^3.5.1",
+    "jstree": "^3.3.10"
+  },
+  "build": {
+    "appId": "top.ykai.dbusViewer",
+    "linux": {
+      "target": [
+        "AppImage"
+      ]
+    },
+    "files": [
+      "package.json",
+      {
+        "from": "dist",
+        "filter": [
+          "renderer.js",
+          "main.js",
+          "index.html"
+        ]
+      }
+    ],
+    "buildDependenciesFromSource": true,
+    "npmRebuild": false
+  }
+}
