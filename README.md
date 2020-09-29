@@ -1,4 +1,4 @@
 DBus Viewer
 ---
 
-用elector写的dbus查看器。
+用electron写的dbus查看器。
