@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "yarn webpack && electron dist/main.js",
+    "dev": "node ./config/dev.js",
     "build": "yarn webpack && electron-builder",
     "build:tb": "env ELECTRON_MIRROR=https://cdn.npm.taobao.org/dist/electron/ ELECTRON_BUILDER_BINARIES_MIRROR=https://npm.taobao.org/mirrors/electron-builder-binaries/ yarn build",
-    "webpack": "webpack --config webpack.config.main.js && webpack --config webpack.config.renderer.js"
+    "webpack": "webpack --config ./config/webpack.prod.main.config.js && webpack --config ./config/webpack.prod.renderer.config.js"
   },
   "main": "main.js",
   "devDependencies": {
@@ -21,6 +21,7 @@
     "url-loader": "^4.1.0",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^5.1.4"
   },
   "dependencies": {

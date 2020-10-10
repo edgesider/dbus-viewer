@@ -1,8 +1,7 @@
-const path = require('path')
+const {abs_path} = require('./utils')
 const {merge} = require('webpack-merge')
 
-const baseConf = {
-    mode: 'development',
+module.exports = conf => merge({
     module: {
         rules: [{
             test: /\.ts$/,
@@ -17,12 +16,8 @@ const baseConf = {
     },
     resolve: {
         extensions: ['.js', '.ts'],
-        modules: ['.', 'src/', 'src/main/', 'src/renderer/', 'node_modules'],
         alias: {
-            '@': path.resolve(__dirname, 'src')
+            '@': abs_path('src')
         }
     },
-    devtool: 'source-map'
-}
-
-module.exports = (conf) => merge(baseConf, conf)
+}, conf)
