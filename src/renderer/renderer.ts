@@ -105,7 +105,7 @@ $(function () {
         const name = el.getAttribute('name')
         // let text = `[${el.tagName[0].toUpperCase()}] ` + name
         let text
-        let children
+        let children: any = []
         switch (el.tagName) {
             case 'node':
                 text = `[O] ${name}`
