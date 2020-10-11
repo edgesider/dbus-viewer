@@ -23,7 +23,8 @@ async function init() {
     if (app.isPackaged)
         await win.loadFile('./index.html')
     else
-        await win.loadURL('http://localhost:8000')
+        // @ts-ignore
+        await win.loadURL(`http://localhost:${WDS_PORT}`)
     win.show()
 }
 

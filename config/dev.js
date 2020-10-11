@@ -1,24 +1,37 @@
+#! /bin/env node
 const {spawn, spawnSync} = require('child_process')
 const Webpack = require('webpack')
 const WDS = require('webpack-dev-server')
-const config = require('./webpack.dev.renderer.config.js')
+const renderer_conf = require('./webpack.dev.renderer.config.js')
+const app_conf = require('./config')
 
-spawnSync('webpack', ['--config', './config/webpack.dev.main.config.js'], {stdio: 'ignore'})
-
-console.log('[WDS] starting')
-const wds = new WDS(Webpack(config), {
-    port: 8000,
-    hot: true
+console.log('[Webpack] compiling main...')
+spawnSync('webpack --config ./config/webpack.dev.main.config.js --hide-modules', {
+    shell: true,
+    stdio: 'inherit'
 })
 
-wds.listen(8000, 'localhost', () => {
-    console.log('[WDS] started')
-    const app = spawn('electron', ['dist/main.js'], {
-        stdio: 'inherit'
-    })
+console.log('[WDS] starting...')
+const wds = new WDS(Webpack(renderer_conf), {
+    port: app_conf.wds_port,
+    hot: true,
+    stats: {
+        chunks: false,
+        modules: false,
+        colors: true
+    }
+})
 
+wds.listen(app_conf.wds_port, 'localhost', () => {
+    console.log('[WDS] started')
+
+    console.log('[App] starting...')
+    const app = spawn('electron dist/main.js', {
+        stdio: 'inherit',
+        shell: true
+    })
     app.on("close", () => {
-        console.log('[APP] stopped')
+        console.log('[App] stopped')
         wds.close()
     })
 })
