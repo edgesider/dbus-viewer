@@ -4,30 +4,39 @@
   "license": "MIT",
   "scripts": {
     "dev": "node ./config/dev.js",
-    "build": "yarn webpack && electron-builder",
-    "build:tb": "env ELECTRON_MIRROR=https://cdn.npm.taobao.org/dist/electron/ ELECTRON_BUILDER_BINARIES_MIRROR=https://npm.taobao.org/mirrors/electron-builder-binaries/ yarn build",
-    "webpack": "webpack --config ./config/webpack.prod.main.config.js && webpack --config ./config/webpack.prod.renderer.config.js"
+    "build": "node ./config/build.js",
+    "build:tb": "node ./config/build.js --tb"
   },
   "main": "main.js",
   "devDependencies": {
     "@types/jstree": "^3.3.40",
-    "css-loader": "^4.3.0",
+    "css-loader": "^5.0.0",
+    "deep-merge": "^1.0.0",
     "electron": "^10.1.2",
     "electron-builder": "^22.8.1",
     "html-webpack-plugin": "^4.5.0",
-    "style-loader": "^1.2.1",
+    "sass": "^1.27.0",
+    "sass-loader": "^10.0.3",
+    "style-loader": "^2.0.0",
     "ts-loader": "^8.0.4",
     "typescript": "^4.0.3",
     "url-loader": "^4.1.0",
+    "vue-loader": "^15.9.3",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.12",
+    "vuetify-loader": "^1.6.0",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
-    "webpack-merge": "^5.1.4"
+    "webpack-merge": "^5.1.4",
+    "yargs": "^16.0.3"
   },
   "dependencies": {
     "dbus-next": "^0.9.1",
     "jquery": "^3.5.1",
-    "jstree": "^3.3.10"
+    "jstree": "^3.3.10",
+    "vue": "^2.6.12",
+    "vuetify": "^2.3.14"
   },
   "build": {
     "appId": "top.ykai.dbusViewer",

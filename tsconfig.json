@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES5",
-    "module": "CommonJS",
+    "module": "esnext",
     "moduleResolution": "Node",
     "esModuleInterop": true,
     "allowJs": true,
@@ -10,9 +10,17 @@
     "baseUrl": ".",
     "paths": {
       "@/*": [
-        "src/*"
+        "./src/*"
       ]
-    }
+    },
+    "downlevelIteration": true,
+    "lib": [
+      "DOM",
+      "ES6"
+    ],
+    "types": [
+      "vuetify"
+    ]
   },
   "include": [
     "src/**/*.ts"

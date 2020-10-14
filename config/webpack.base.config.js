@@ -15,9 +15,14 @@ module.exports = conf => merge({
         }]
     },
     resolve: {
-        extensions: ['.js', '.ts'],
+        extensions: ['.js', '.ts', '.vue', '.sass'],
         alias: {
             '@': abs_path('src')
         }
+    },
+    stats: {
+        colors: true,
+        chunks: false,
+        modules: false
     },
 }, conf)
