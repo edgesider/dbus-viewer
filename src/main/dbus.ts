@@ -48,10 +48,7 @@ async function getNames(_, bus_name) {
 }
 
 async function inspect(_, bus_name, name, path) {
-    let data = await dbusCall(bus_name, name, path, 'org.freedesktop.DBus.Introspectable', 'Introspect')
-    const re = /.*?\n.*?\n([\s\S]*)/
-    data = re.exec(data)[1]
-    return data
+    return await dbusCall(bus_name, name, path, 'org.freedesktop.DBus.Introspectable', 'Introspect')
 }
 
 async function getProperty(_, bus, name, path, iface, property) {

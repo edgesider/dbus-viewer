@@ -5,13 +5,27 @@ module.exports = conf => merge({
     module: {
         rules: [{
             test: /\.ts$/,
-            use: ['ts-loader']
+            loader: 'ts-loader',
+            options: {
+                appendTsSuffixTo: [/\.vue$/]
+            }
         }, {
             test: /\.css$/,
             use: ['style-loader', 'css-loader']
         }, {
             test: /\.(png|jpg|gif)$/i,
-            use: ['url-loader']
+            use: 'url-loader'
+        }, {
+            test: /\.vue$/,
+            use: 'vue-loader'
+        }, {
+            test: /\.s[ac]ss$/,
+            use: ['style-loader', 'css-loader', {
+                loader: 'sass-loader',
+                options: {
+                    additionalData:  '@import "@/renderer/variables.sass"'
+                }
+            }]
         }]
     },
     resolve: {

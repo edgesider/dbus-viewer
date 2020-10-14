@@ -1,78 +1,27 @@
-@import "../../node_modules/jstree/dist/themes/default/style.css";
-
 html {
     /*避免进度条占据视口空间*/
     width: 100vw;
+    overflow: hidden;
 }
 
 body {
     margin: 0;
-    font-size: 16px;
-    overflow: hidden;
 }
 
-.main {
-    width: 90vw;
-    height: 95vh;
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+* {
+    user-select: none;
 }
 
-.names {
-    width: 100%;
-    margin: 10px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+*::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
 }
 
-#sel-bus {
-    margin-right: 10px;
-    outline: none;
+*::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.3);
 }
 
-#sel-name {
-    width: 50%;
-    outline: none;
-}
-
-.data {
-    width: 100%;
-    height: 50%;
-    overflow-y: auto;
-    padding-bottom: 2rem;
-    margin-bottom: 20px;
-    white-space: pre-wrap;
-}
-
-.logs {
-    width: 100%;
-    height: 40%;
-    flex-grow: 1;
-    overflow-y: auto;
-    overflow-x: hidden;
-    border: 2px rgba(0, 0, 0, 0.4) solid;
-}
-
-.log-item {
-    font-size: 1rem;
-    padding: 4px;
-    border-bottom: 1px rgba(0, 0, 0, 0.4) solid;
-    white-space: pre-wrap;
-    min-height: 1rem;
-    overflow-wrap: break-word;
-}
-
-.log-error {
-    color: red;
-}
-
-.divider {
-    width: 100%;
-    height: 1px;
-    margin: 5px 0;
-    background: rgba(0, 0, 0, 0.2)
+*::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.25);
 }
