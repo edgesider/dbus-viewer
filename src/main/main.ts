@@ -6,7 +6,7 @@ async function init() {
     const win = new BrowserWindow({
         width: 800,
         height: 600,
-        resizable: false,
+        resizable: true,
         webPreferences: {
             nodeIntegration: true,
         },
