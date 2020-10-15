@@ -17,6 +17,7 @@
                                       @change="initTree"
                                       hide-details
                                       v-model="name"
+                                      :menu-props="{'content-class': 'name-select', auto:true}"
                                       prepend-icon="mdi-view-list"
                                       dense></v-select>
                         </v-col>
@@ -26,7 +27,6 @@
                 <div class="row2">
                     <v-fab-transition>
                         <v-btn fab small fixed bottom right
-                               style="transform: translateY(0)"
                                @click="toggleDark">
                             <v-icon>mdi-brightness-6</v-icon>
                         </v-btn>
@@ -39,7 +39,7 @@
                         </v-btn>
                     </v-fab-transition>
                     <v-row justify="center">
-                        <v-col cols="10">
+                        <v-col cols="10" class="tree">
                             <v-treeview dense
                                         :load-children="loadNode"
                                         :items="objects"
@@ -255,5 +255,15 @@
 
     .row3 {
         flex: 0 1 45%;
+    }
+
+    .tree .v-treeview-node__root .v-icon {
+        font-size: 18px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .name-select {
+        max-height: 500px !important;
     }
 </style>
