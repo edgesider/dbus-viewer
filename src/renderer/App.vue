@@ -57,6 +57,7 @@
                                             Get
                                         </v-btn>
                                         <v-btn color="primary" text small
+                                               v-if="!item.readonly"
                                                @click="setProperty(item)">
                                             Set
                                         </v-btn>
@@ -179,8 +180,9 @@
                     name: '',
                     nodeName: name,
                     type: xml.tagName,
-                    parent,
+                    readonly: false,
                     children: undefined,
+                    parent,
                 }
                 switch (xml.tagName) {
                     case 'node':
@@ -200,6 +202,8 @@
                         break
                     case 'property':
                         item.name = `[P] ${name}`
+                        if (xml.getAttribute('access') !== 'readwrite')
+                            item.readonly = true
                         break
                 }
                 return item
